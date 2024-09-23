@@ -26,7 +26,7 @@ game_src += windows.compile_resources('res/game.rc',
   include_directories: rc_inc,
 )
 
-client_deps += subproject('khr-headers').get_variable('khr_headers_dep')
+#client_deps += subproject('khr-headers').get_variable('khr_headers_dep')
 
 if get_option('software-sound').allowed()
   client_src += files('wave.c', 'dsound.c')
